@@ -15,6 +15,7 @@ import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -49,6 +50,7 @@ fun SelectableItem(
                 color = borderColor,
                 shape = borderShape
             )
+            .clip(borderShape)
             .clickable { onClick() }
     ) {
         Row(
