@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SelectableItemCompose</string>
+    <string name="title">Lorem Ipsum</string>
+    <string name="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque, metus et tempor consectetur, tortor velit aliquet felis, sit amet laoreet dolor justo nec ipsum. Quisque scelerisque sapien quis nulla varius, at fringilla augue efficitur. Integer eu nunc a nulla tristique blandit. Mauris cursus consequat lectus in accumsan.</string>
 </resources>

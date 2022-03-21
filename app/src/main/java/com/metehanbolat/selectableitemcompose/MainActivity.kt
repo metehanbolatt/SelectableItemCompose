@@ -3,10 +3,7 @@ package com.metehanbolat.selectableitemcompose
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -33,9 +30,18 @@ class MainActivity : ComponentActivity() {
                 ) {
                     SelectableItem(
                         selected = selected,
-                        title = "Lorem Ipsum",
+                        title = getString(R.string.title),
                         onClick = {
                             selected = !selected
+                        }
+                    )
+                    Spacer(modifier = Modifier.height(12.dp))
+                    SelectableItem(
+                        selected = selected2,
+                        title = getString(R.string.title),
+                        subtitle = getString(R.string.subtitle),
+                        onClick = {
+                            selected2 = !selected2
                         }
                     )
                 }
